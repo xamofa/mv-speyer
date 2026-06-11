@@ -3,18 +3,85 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Musikverein Speyer e.V. - Redesign</title>
+    <title>Musikverein Speyer e.V.</title>
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#223b76">
+    <meta property="og:site_name" content="Musikverein Speyer e.V.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:title" content="Musikverein Speyer e.V.">
+    <meta property="og:description" content="Musikverein Speyer e.V.: Stadtkapelle und Stadtjugendkapelle suchen Musikerinnen und Musiker in Speyer.">
+    <meta property="og:url" content="https://mv-speyer.netlify.app/">
+    <meta property="og:image" content="https://mv-speyer.netlify.app/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://mv-speyer.netlify.app/">
     <meta
       name="description"
       content="Musikverein Speyer e.V.: Stadtkapelle und Stadtjugendkapelle suchen Musikerinnen und Musiker in Speyer."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
     <style>
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/poppins-300.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/poppins-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/poppins-500.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/poppins-600.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/poppins-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/poppins-800.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/righteous-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
       :root {
         --navy: #223b76;
         --navy-deep: #172a5a;
@@ -1323,8 +1390,8 @@
           <p class="section-kicker">Auftritte</p>
           <h2 class="section-title" id="auftritte-title">Nächste Termine.</h2>
           <p class="section-lead">
-            Hier können künftig alle Auftritte des Vereins gepflegt werden. Die Beispiele sind
-            Platzhalter für Name, Datum, Uhrzeit und Ort.
+            Hier spielt die Stadtkapelle Speyer in den kommenden Monaten. Komm vorbei
+            und hör rein.
           </p>
 
           <div class="gigs-table-wrap">
@@ -1339,34 +1406,34 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Sommerkonzert im Park</strong>Stadtkapelle Speyer</td>
-                  <td>21.06.2026</td>
-                  <td>18:00 Uhr</td>
-                  <td>Adenauerpark Speyer</td>
-                </tr>
-                <tr>
-                  <td><strong>Altstadtfest Speyer</strong>Gemeinsamer Vereinsauftritt</td>
-                  <td>04.07.2026</td>
-                  <td>16:30 Uhr</td>
-                  <td>Innenstadt Speyer</td>
-                </tr>
-                <tr>
-                  <td><strong>Familientag Musikschule</strong>Stadtjugendkapelle Speyer</td>
-                  <td>19.07.2026</td>
-                  <td>14:00 Uhr</td>
-                  <td>Musikschule Speyer</td>
-                </tr>
-                <tr>
-                  <td><strong>Herbstmatinee</strong>Stadtkapelle Speyer</td>
-                  <td>27.09.2026</td>
+                  <td><strong>Auftritt Spargelfest</strong>Stadtkapelle Speyer</td>
+                  <td>14.06.2026</td>
                   <td>11:00 Uhr</td>
-                  <td>Stadthalle Speyer</td>
+                  <td>Speyer</td>
                 </tr>
                 <tr>
-                  <td><strong>Adventskonzert</strong>Alle Orchester</td>
-                  <td>13.12.2026</td>
+                  <td><strong>Eröffnung Altstadtfest</strong>Stadtkapelle Speyer</td>
+                  <td>11.09.2026</td>
                   <td>17:00 Uhr</td>
-                  <td>Gedächtniskirche Speyer</td>
+                  <td>Altstadt Speyer</td>
+                </tr>
+                <tr>
+                  <td><strong>Altstadtfest Paradiesgarten</strong>Stadtkapelle Speyer</td>
+                  <td>12.09.2026</td>
+                  <td>14:00 Uhr</td>
+                  <td>Paradiesgarten Speyer</td>
+                </tr>
+                <tr>
+                  <td><strong>Eröffnung Herbstmesse</strong>Stadtkapelle Speyer</td>
+                  <td>23.10.2026</td>
+                  <td>18:00 Uhr</td>
+                  <td>Festplatz Speyer</td>
+                </tr>
+                <tr>
+                  <td><strong>Eröffnung Weihnachtsmarkt Speyer</strong>Stadtkapelle Speyer</td>
+                  <td>23.11.2026</td>
+                  <td>18:00 Uhr</td>
+                  <td>Innenstadt Speyer</td>
                 </tr>
               </tbody>
             </table>
