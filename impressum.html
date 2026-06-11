@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressum - Musikverein Speyer e.V.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #223b76;
+        --coral: #f05f75;
+        --red: #c4161c;
+        --teal: #246d75;
+        --ink: #1a1a1a;
+        --muted: #5a5a6a;
+        --paper: #faf9f7;
+        --white: #ffffff;
+        --line: rgba(26, 26, 26, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: Poppins, Arial, sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .header {
+        background: var(--white);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav,
+      .legal,
+      .footer-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 88px;
+      }
+
+      .nav img {
+        width: 180px;
+        height: 60px;
+        object-fit: contain;
+        object-position: left center;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 12px 18px;
+        border-radius: 8px;
+        color: var(--white);
+        background: var(--coral);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .legal {
+        padding-top: 82px;
+        padding-bottom: 96px;
+      }
+
+      .kicker {
+        color: var(--red);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 8px 0 24px;
+        font-family: Righteous, Poppins, sans-serif;
+        font-size: clamp(2.4rem, 7vw, 4rem);
+        line-height: 1.05;
+      }
+
+      h2 {
+        margin: 34px 0 10px;
+        color: var(--navy);
+        font-size: 1.25rem;
+      }
+
+      p {
+        max-width: 760px;
+        color: var(--muted);
+      }
+
+      .panel {
+        margin-top: 30px;
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+      }
+
+      .panel p {
+        margin: 0 0 12px;
+      }
+
+      .panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .footer {
+        color: rgba(255, 255, 255, 0.76);
+        background: #172a5a;
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        font-size: 0.84rem;
+      }
+
+      .footer a:hover,
+      .panel a:hover {
+        color: var(--red);
+      }
+
+      @media (max-width: 700px) {
+        .nav {
+          min-height: 68px;
+        }
+
+        .nav img {
+          width: 126px;
+          height: 42px;
+        }
+
+        .legal {
+          padding-top: 56px;
+          padding-bottom: 72px;
+        }
+
+        .footer-inner {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" aria-label="Seitennavigation">
+        <a aria-label='Zur Startseite' href='/'>
+          <img src="assets/00-musikverein-speyer-e-v.png" alt="Musikverein Speyer e.V." />
+        </a>
+        <a class="button" href="mailto:info@mv-speyer.de">Mitmachen</a>
+      </nav>
+    </header>
+
+    <main class="legal">
+      <p class="kicker">Rechtliches</p>
+      <h1>Impressum</h1>
+      <p>Angaben gemäß § 5 TMG für den Internetauftritt des Musikverein Speyer e.V.</p>
+
+      <section class="panel" aria-labelledby="anbieter">
+        <h2 id="anbieter">Anbieter</h2>
+        <p><strong>Musikverein Speyer e.V.</strong></p>
+        <p>Dudenhofer Str. 6b<br />67346 Speyer</p>
+        <p>Vertreten durch den 1. Vorsitzenden Tobias Schmitt.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="kontakt-impressum">
+        <h2 id="kontakt-impressum">Kontakt</h2>
+        <p>E-Mail: <a href="mailto:info@mv-speyer.de">info@mv-speyer.de</a></p>
+        <p>Telefon: <a href="tel:+4962328777140">06232 - 877 714 0</a></p>
+      </section>
+
+      <section class="panel" aria-labelledby="verantwortlich">
+        <h2 id="verantwortlich">Verantwortlich für den Inhalt</h2>
+        <p>Tobias Schmitt, Anschrift wie oben.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>&copy; 2026 Musikverein Speyer e.V.</span>
+        <span><a href='/'>Startseite</a> · <a href='/datenschutz'>Datenschutz</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
